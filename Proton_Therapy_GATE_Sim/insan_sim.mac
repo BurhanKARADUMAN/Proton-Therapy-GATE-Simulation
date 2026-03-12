@@ -1,0 +1,47 @@
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/gate/world/geometry/setXLength 3. m
+/gate/world/geometry/setYLength 3. m
+/gate/world/geometry/setZLength 3. m
+/gate/world/setMaterial Air
+
+/gate/world/daughters/name torso
+/gate/world/daughters/insert cylinder
+/gate/torso/geometry/setRmax 15. cm
+/gate/torso/geometry/setHeight 70. cm
+/gate/torso/setMaterial Water
+
+/gate/torso/daughters/name head
+/gate/torso/daughters/insert sphere
+/gate/head/geometry/setRmax 10. cm
+/gate/head/setMaterial Water
+/gate/head/placement/setTranslation 0. 0. 45. cm
+
+/gate/actor/addActor SimulationStatisticActor stat
+/gate/actor/stat/save sim_istatistik.txt
+
+/gate/actor/addActor DoseActor doz_olcer
+/gate/actor/doz_olcer/save doz_haritasi.mhd
+/gate/actor/doz_olcer/attachTo torso
+/gate/actor/doz_olcer/stepHitType random
+/gate/actor/doz_olcer/setResolution 30 30 70
+/gate/actor/doz_olcer/enableDose true
+
+/gate/physics/addPhysicsList emstandard_opt3
+/gate/run/initialize
+
+/gate/source/addSource myBeam
+/gate/source/myBeam/gps/particle proton
+/gate/source/myBeam/gps/ene/type Mono
+/gate/source/myBeam/gps/ene/mono 150 MeV
+/gate/source/myBeam/gps/pos/type Plane
+/gate/source/myBeam/gps/pos/shape Square
+/gate/source/myBeam/gps/pos/halfx 2.5 cm
+/gate/source/myBeam/gps/pos/halfy 2.5 cm
+/gate/source/myBeam/gps/pos/centre 80. 0. 0. cm
+/gate/source/myBeam/gps/direction -1 0 0
+/gate/source/myBeam/setActivity 500 Bq
+
+/gate/application/setTimeSlice 0.5 s
+/gate/application/setTimeStart 0. s
+/gate/application/setTimeStop 0.5 s
+/gate/application/startDAQ

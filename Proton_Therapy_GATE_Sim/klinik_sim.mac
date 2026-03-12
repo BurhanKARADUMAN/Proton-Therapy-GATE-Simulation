@@ -1,0 +1,40 @@
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/gate/world/geometry/setXLength 2. m
+/gate/world/geometry/setYLength 2. m
+/gate/world/geometry/setZLength 2. m
+/gate/world/setMaterial Air
+
+# Hastayi Iceri Aktar
+/gate/world/daughters/name hasta
+/gate/world/daughters/insert ImageNestedParametrisedVolume
+/gate/hasta/geometry/setImage hasta_bt.mhd
+/gate/hasta/geometry/setRangeToMaterialFile hasta_materyal.dat
+
+# Doz Olceri Hastaya Bagla
+/gate/actor/addActor DoseActor doz_olcer
+/gate/actor/doz_olcer/save hasta_doz.mhd
+/gate/actor/doz_olcer/attachTo hasta
+/gate/actor/doz_olcer/stepHitType random
+/gate/actor/doz_olcer/setResolution 50 50 50
+/gate/actor/doz_olcer/enableDose true
+
+/gate/physics/addPhysicsList emstandard_opt3
+/gate/run/initialize
+
+# Genis Proton Isini (Hastanin gogsune dogru)
+/gate/source/addSource myBeam
+/gate/source/myBeam/gps/particle proton
+/gate/source/myBeam/gps/ene/type Mono
+/gate/source/myBeam/gps/ene/mono 150. MeV
+/gate/source/myBeam/gps/pos/type Plane
+/gate/source/myBeam/gps/pos/shape Square
+/gate/source/myBeam/gps/pos/halfx 12. cm
+/gate/source/myBeam/gps/pos/halfy 5. cm
+/gate/source/myBeam/gps/pos/centre 60. 0. 0. cm
+/gate/source/myBeam/gps/direction -1 0 0
+/gate/source/myBeam/setActivity 1000 Bq
+
+/gate/application/setTimeSlice 0.5 s
+/gate/application/setTimeStart 0. s
+/gate/application/setTimeStop 0.5 s
+/gate/application/startDAQ
