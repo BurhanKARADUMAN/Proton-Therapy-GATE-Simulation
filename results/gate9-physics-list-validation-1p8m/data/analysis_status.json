@@ -1,0 +1,21 @@
+{
+  "complete_runs": 36,
+  "groups": {
+    "emstandard_opt3/70": 3,
+    "emstandard_opt3/100": 3,
+    "emstandard_opt3/150": 3,
+    "emstandard_opt3/200": 3,
+    "FTFP_BERT/70": 3,
+    "FTFP_BERT/100": 3,
+    "FTFP_BERT/150": 3,
+    "FTFP_BERT/200": 3,
+    "QGSP_BIC/70": 3,
+    "QGSP_BIC/100": 3,
+    "QGSP_BIC/150": 3,
+    "QGSP_BIC/200": 3
+  },
+  "problems": [],
+  "uncertainty": "Across independently seeded runs; 95% Student t intervals only for n>=2; no systematics",
+  "physics_comparison": "Physics-list sensitivity, NOT isolated hadronic contribution",
+  "clinical": false
+}

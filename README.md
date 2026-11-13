@@ -108,3 +108,9 @@ Proton_Therapy_GATE_Sim/   # Preserved historical GATE project and artifacts
 **Author:** Burhan Karaduman · Department of Physics, Middle East Technical University (METU), Türkiye.
 
 **Reuse / license:** Third-party files and historic project assets may have separate rights. A project-wide license has not been assumed.
+
+## Real GATE 9.4 physics-list validation (1.8 million protons)
+
+The [36-run physics-list sensitivity benchmark](results/gate9-physics-list-validation-1p8m/README.md) contains 70â€“200 MeV pristine proton profiles, 3 independently seeded replicates per configuration, 50,000 primaries per run, `emstandard_opt3` / `QGSP_BIC` / `FTFP_BERT` comparisons, quantitative R80 metrics and original CSV-based statistics. **Research output only; not clinical dosimetry.**
+
+![Scored energy fraction across physics lists](results/gate9-physics-list-validation-1p8m/figures/scored_energy_fraction.png)

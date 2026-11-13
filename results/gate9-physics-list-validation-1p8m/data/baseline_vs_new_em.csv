@@ -1,0 +1,17 @@
+energy_MeV,metric,reference_one_run,independent_replicate_mean,difference_new_minus_old,new_runs,new_sample_SD,interpretation
+70,peak_depth_mm,40.5,40.5,0.0,3,0.0,Difference only; prior reference is a single run without estimated SD
+70,distal_R80_mm,40.7791131170858,40.78105186374351,0.0019387466577072132,3,0.00046473159311892167,Difference only; prior reference is a single run without estimated SD
+70,distal_R20_mm,41.798473069858794,41.8103864045738,0.011913334715003998,3,0.0027180098227452113,Difference only; prior reference is a single run without estimated SD
+70,distal_80_20_falloff_mm,1.0193599527729944,1.0293345408302936,0.009974588057299227,3,0.0022536061305497204,Difference only; prior reference is a single run without estimated SD
+100,peak_depth_mm,76.5,76.5,0.0,3,0.0,Difference only; prior reference is a single run without estimated SD
+100,distal_R80_mm,77.34951072068361,77.34635690896005,-0.003153811723564104,3,0.014291431824655249,Difference only; prior reference is a single run without estimated SD
+100,distal_R20_mm,78.66796245163916,78.65624595796093,-0.011716493678221696,3,0.010327888934499105,Difference only; prior reference is a single run without estimated SD
+100,distal_80_20_falloff_mm,1.3184517309555446,1.3098890490008774,-0.00856268195466714,3,0.007284027540511349,Difference only; prior reference is a single run without estimated SD
+150,peak_depth_mm,156.5,156.5,0.0,3,0.0,Difference only; prior reference is a single run without estimated SD
+150,distal_R80_mm,158.24354310515787,158.24871974325302,0.005176638095150565,3,0.013998095111171657,Difference only; prior reference is a single run without estimated SD
+150,distal_R20_mm,160.4997514214902,160.5000110879249,0.0002596664346867783,3,0.026713763556407446,Difference only; prior reference is a single run without estimated SD
+150,distal_80_20_falloff_mm,2.2562083163323337,2.251291344671832,-0.0049169716605015346,3,0.01285844101247267,Difference only; prior reference is a single run without estimated SD
+200,peak_depth_mm,257.5,258.1666666666667,0.6666666666666856,3,0.5773502691896258,Difference only; prior reference is a single run without estimated SD
+200,distal_R80_mm,260.53702302796944,260.5291767941116,-0.00784623385783334,3,0.0161700411643117,Difference only; prior reference is a single run without estimated SD
+200,distal_R20_mm,264.20752399132954,264.2298663424552,0.0223423511256442,3,0.014222221412048474,Difference only; prior reference is a single run without estimated SD
+200,distal_80_20_falloff_mm,3.670500963360098,3.700689548343538,0.030188584983439792,3,0.018357230952000352,Difference only; prior reference is a single run without estimated SD
