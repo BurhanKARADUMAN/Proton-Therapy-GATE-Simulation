@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bragg-peak-research-kit"
+version = "2.0.0"
+description = "Transparent Bragg-peak toy modeling, SOBP optimization, and GATE MetaImage dose analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+ui = ["streamlit>=1.30"]
+
+[project.scripts]
+bragg-demo = "braggkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["braggkit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+*.raw
+*.dcm
+*.nii*
+*.mha
+*.mhd
+*.log
+.DS_Store
+# NOTE: Example outputs are deliberately included via -f when publishing.
